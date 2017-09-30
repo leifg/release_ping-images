@@ -1,7 +1,7 @@
 FROM leifg/elixir:1.5.2
 MAINTAINER Leif Gensert <leif@leif.io>
 
-RUN apk add --no-cache libc6-compat build-base curl postgresql-client bash
+RUN apk add --no-cache libc6-compat build-base curl postgresql-client bash git
 
 # Install Docker in Docker
 
