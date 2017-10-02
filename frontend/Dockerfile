@@ -2,7 +2,7 @@ FROM node:8.2.1
 MAINTAINER Leif Gensert <leif@leif.io>
 
 RUN apt-get update
-RUN apt-get -y install python2.7-minimal python2.7-dev zip unzip build-essential git
+RUN apt-get -y install python2.7-minimal python2.7-dev zip unzip build-essential git moreutils jq
 
 # Install AWS CLI
 
