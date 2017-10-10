@@ -13,7 +13,7 @@ RUN rm -rf ./awscli-bundle/
 
 # Install Elm App and yarn
 
-ENV YARN_VERSION=1.1.0
+ENV YARN_VERSION=1.2.0
 
 RUN npm install -g yarn@${YARN_VERSION}
 RUN yarn global add create-elm-app
