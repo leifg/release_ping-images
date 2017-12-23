@@ -1,5 +1,5 @@
-FROM leifg/elixir:1.5.2
-MAINTAINER Leif Gensert <leif@leif.io>
+FROM leifg/elixir:1.5.3
+LABEL maintainer="Leif Gensert <leif@leif.io>"
 
 RUN apk add --no-cache libc6-compat build-base curl postgresql-client bash git openssh
 
