@@ -12,6 +12,13 @@ RUN curl -L -o /tmp/docker-$DOCKER_VERSION.tgz https://get.docker.com/builds/Lin
     && mv /tmp/docker/* /usr/local/bin \
     && rm -rf /tmp/*
 
+# Docker Cloud
+
+RUN apk -Uuv --no-cache add python py-pip
+
+ENV DOCKER_CLOUD_VERSION="1.0.9"
+RUN pip install docker-cloud==${DOCKER_CLOUD_VERSION}
+
 # Install Hyper
 
 RUN curl -L -o /tmp/hyper.tar.gz https://hyper-install.s3.amazonaws.com/hyper-linux-x86_64.tar.gz \
